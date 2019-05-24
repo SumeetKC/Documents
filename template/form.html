@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>King's Music Store</title>
+<style type="text/css">
+
+</style>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<body>
+	<div style="background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%); padding: 25px">
+		<h1 align="center">King's Music Store</h1>
+	</div>
+	<br />
+
+<hr>
+	<div align="center">
+		Welcome to King's Music Store. Please fill below form to sign up for an email newsletter from the site.
+
+	<hr />
+	<div>
+		<form name="signupform" method="POST"
+			action="http://infotech.scu.edu.au/cgi-bin/echo_form" autocomplete="off">
+
+			<div align="center">
+				<table cellpadding="6">
+					<tr style="color: blue">
+						<td>First Name<sup>*</sup></td>
+						<td><input type="text" name="first_name" id="first_name"
+							placeholder="First Name" required /></td>
+						<td>Last Name<sup>*</sup></td>
+						<td><input type="text" name="last_name" id="last_name"
+							placeholder="Last Name" /></td>
+						<td>Email Address<sup>*</sup></td>
+						<td><input type="email" name="email" id="email"
+								placeholder="Email Address" required /></td>
+					</tr>
+					<tr style="color: blue" rowspan="10">
+						<td colspan="3">Select Age group<br>
+						<input type="radio" name="age" id="age" />
+						<label>15-25</label>
+						<input type="radio" name="26-35" id="26-35" />
+						<label for="26-35">26-35</label>
+						<input type="radio" name="36-45" id="36-45" />
+						<label for="36-45">36-45</label>
+						<input type="radio" name="46-55" id="46-55" />
+						<label for="46-55">46-55</label>
+						<input type="radio" name="55+" id="55+" />
+						<label for="55+">55+</label>
+						</td>
+						<td colspan="3">Age group</td>
+					</tr>
+					
+					<tr></tr>
+						<td colspan="6" align="center"><input class="btn"
+							type="submit" value="Confirm & Save" /> <input class="btn"
+							type="reset" value="Reset" /></td>
+						<!-- onclick="validateForm()" -->
+
+					</tr>
+				</table>
+
+				<div style="color: red" align="left">* mark fields are
+					mandatory</div>
+			</div>
+		</form>
+	</div>
+
+	</div>
+
+<hr>
+<p align="center">&copy;Copyright  2018-2019</p>
+</body>
+
+</html>
+
+
+

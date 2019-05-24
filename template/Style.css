@@ -1,0 +1,42 @@
+@CHARSET "ISO-8859-1";
+
+body {
+	margin-left: 70px;
+	margin-right: 70px;
+	background: lightgrey no-repeat top left;
+	
+	font-family: "Segoe UI";
+	font-size: 15px;
+}
+
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.menutab{
+	display: inline;
+}
+
+.menulink {
+	margin-right: 5px;
+	color: white;
+	background-color: #4CAF50;
+	padding: 12px;
+	font-size: 15px;
+	font-family: Arial;
+	cursor: pointer;
+	display: inline;
+	text-decoration: none;
+	color: white
+}
+
+.menulink:HOVER {
+	background-color: #3e8e41;
+	font-weight: lighter;
+}
+
+.maindiv{
+	width: 100%;
+	margin-bottom: 20px
+	
+}
