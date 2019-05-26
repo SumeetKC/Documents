@@ -3,14 +3,53 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>King's Music Store</title>
+<link rel="stylesheet" type="text/css" href="Style.css">
 <style type="text/css">
 
+input[type=text], input[type=email] {
+	/* width: 100px;
+	height: 10px; */
+	padding: 6px 8px;
+	box-sizing: border-box;
+	border: 1px solid grey;
+	border-radius: 3px;
+}
+
+.btn {
+	background-color: #4CAF50;
+	padding: 8px;
+	font-size: 17px;
+	font-family: Arial;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+sup {
+	color: red;
+	font-size: 15px;
+}
 </style>
 
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<link rel="stylesheet" type="text/css" href="Style.css">
+<script type="text/javascript">
+function welcome()
+{
+	alert("Welcome to the Kings Music Store - Newsletter Signup");
+}
+
+function emptyCheck()
+{
+	var firstName = document.getElementById("first_name").value;
+	var lastName = document.getElementById("last_name").value;
+	if (firstName.length===0 || lastName.length===0) {
+		alert("Field First Name and Last Name cannot be empty!!!!!!!!!!!!");
+		event.preventDefault();
+	}
+}
+
+</script>
 </head>
-<body>
+<body onload="welcome()">
 	<div style="background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%); padding: 25px">
 		<h1 align="center">King's Music Store</h1>
 	</div>
@@ -27,39 +66,68 @@
 
 			<div align="center">
 				<table cellpadding="6">
-					<tr style="color: blue">
+					<tr>
 						<td>First Name<sup>*</sup></td>
 						<td><input type="text" name="first_name" id="first_name"
-							placeholder="First Name" required /></td>
+							placeholder="First Name" /></td>
 						<td>Last Name<sup>*</sup></td>
 						<td><input type="text" name="last_name" id="last_name"
 							placeholder="Last Name" /></td>
 						<td>Email Address<sup>*</sup></td>
 						<td><input type="email" name="email" id="email"
-								placeholder="Email Address" required /></td>
+								placeholder="Email Address" required/></td>
 					</tr>
-					<tr style="color: blue" rowspan="10">
-						<td colspan="3">Select Age group<br>
-						<input type="radio" name="age" id="age" />
-						<label>15-25</label>
-						<input type="radio" name="26-35" id="26-35" />
-						<label for="26-35">26-35</label>
-						<input type="radio" name="36-45" id="36-45" />
-						<label for="36-45">36-45</label>
-						<input type="radio" name="46-55" id="46-55" />
-						<label for="46-55">46-55</label>
-						<input type="radio" name="55+" id="55+" />
-						<label for="55+">55+</label>
+					<tr>
+						<td colspan="3">Select Age group : <br>
+						<input type="radio" name="age" value="15-25" />
+						<label>15-25</label><br/>
+						<input type="radio" name="age" value="26-35" />
+						<label>26-35</label><br/>
+						<input type="radio" name="age" value="36-45" />
+						<label>36-45</label><br/>
+						<input type="radio" name="age" value="46-55" />
+						<label>46-55</label><br/>
+						<input type="radio" name="age" value="55+" />
+						<label>55+</label>
 						</td>
-						<td colspan="3">Age group</td>
+						<td colspan="3">Select Music You Like : <br/>
+							<input type="checkbox" value="heavymetal" id="heavymetal" />
+							<label>Heavy Metal</label><br/>
+							<input type="checkbox" value="country" id="country" />
+							<label>Country and Western</label><br/>
+							<input type="checkbox" value="classical" id="classical" />
+							<label>Classical</label><br/>
+							<input type="checkbox" value="rock" id="rock" />
+							<label>Rock & Roll</label><br/>
+							<input type="checkbox" value="pop" id="pop" />
+							<label>Pop</label>
+							<input type="checkbox" value="folk" id="folk" />
+							<label>Folk</label>
+							<input type="checkbox" value="blues" id="blues" />
+							<label>Blues</label>
+							<input type="checkbox" value="jazz" id="jazz" />
+							<label>Jazz</label>
+							<input type="checkbox" value="disco" id="disco" />
+							<label>Disco</label>
+							<input type="checkbox" value="opera" id="opera" />
+							<label>Opera</label>
+						</td>
 					</tr>
-					
-					<tr></tr>
-						<td colspan="6" align="center"><input class="btn"
-							type="submit" value="Confirm & Save" /> <input class="btn"
-							type="reset" value="Reset" /></td>
-						<!-- onclick="validateForm()" -->
+					<tr>
+						<td colspan="3">
+								<label>Please tell us about any further type of music you are <br>searching for : </label>
+						</td>	
+						
+						<td colspan="3">
+							<textarea rows="3" cols="60"></textarea>
+						</td>
+					</tr>
 
+					<tr>	
+						<td colspan="6" align="center">
+							<button class="btn"	type="submit" onclick="emptyCheck()" >Confirm & Save</button>
+							<button class="btn" type="reset" >Reset</button>
+						</td>
 					</tr>
 				</table>
 
@@ -72,7 +140,7 @@
 	</div>
 
 <hr>
-<p align="center">&copy;Copyright  2018-2019</p>
+<p align="center">&copy;Copyright Electronic Web Portfolio 2018-2019</p>
 </body>
 
 </html>

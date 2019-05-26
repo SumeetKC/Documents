@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Electronic Web Portfolio</title>
+<style type="text/css">
+
+.comptable{
+	background-color: white; 
+	border-collapse: collapse; 
+	font-family: Arial; 
+	font-size: 12pt; 
+	height: 100%; 
+	margin-right: 100px;
+	
+}
+
+thead {
+	background-color: lightsalmon;
+	font-family: Arial;
+	font-size: 10pt;
+}
+
+tr:nth-child(even) {
+	background-color: #f2f2f2;
+}
+</style>
+
+
+<link rel="stylesheet" type="text/css" href="Style.css">
+</head>
+<body>
+	<div style="background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%); padding: 25px">
+		<h1 align="center">Electronic Web Portfolio</h1>
+	</div>
+	<br />
+
+	<div class="maindiv">
+		<div class="menutab">
+			<a href="index.html" class="menulink" title="Go Home"> Home</a>
+		</div>
+		
+		<div class="menutab">
+			<a href="resume.html" class="menulink" title="Resume"> Resume</a>
+		</div>
+		
+		<div class="menutab">
+			<a href="graphics.html" class="menulink" title="Graphics Production and Preparation"> Graphics production and preparation</a>		
+		</div>
+		
+		<div class="menutab">
+			<a href="com_skill.html" class="menulink" title="Written and Spoken Communication skills"> Communication skills</a>		
+		</div>
+	
+		<div class="menutab">
+			<a href="project_mgmt.html" class="menulink" title="Project Management"> Project Management</a>		
+		</div>
+		
+		<div class="menutab">
+			<a href="web_skill.html" class="menulink" title="Web Development Skills"> Web Development Skills</a>		
+		</div>
+	</div>
+<hr>
+	<div align="center">
+		<h1>Website Issues</h1> 
+	</div>
+	<div>
+		<h2>Small clickable areas for links in the site.</h2>
+		<p>Hyperlinks are designed to be clicked, so to make them usable, it makes sense to ensure that they are
+		easy to click. Here is an example of links that are far too small; clicking them is harder than it 
+		should be.</p>
+		<img src="smalllink.jpg" alt="Small Appearing Link">
+		<p>Here is an example of the same interface element, the comments link, but this time with a much larger 
+		clickable area:</p>
+		<img src="largelink.jpg" alt="Large Appearing Link">
+		<p>Why would we want a larger clickable area? Simple. Because our hand movement with the mouse is not very
+			precise. A large clickable area makes it easier to hover the mouse cursor over the link. To ensure we get
+			a large clickable area, we could either make the whole link bigger or increase the padding around the link 
+			using the CSS <b>padding</b> property. Here is the code:</p>
+		<code>
+			.menulink {
+				margin-right: 5px;
+				color: white;
+				background-color: #4CAF50;
+				padding: 12px;
+				font-size: 15px;
+				font-family: Arial;
+				cursor: pointer;
+				display: inline;
+				text-decoration: none;
+				color: white
+			}
+		</code>
+	</div>
+	<div>
+			<h2>Duplicate Page Titles</h2>
+			<p>The title of each Web page is important. Page titles are the <b>pieces of text we write between the title 
+			tags </b>in the head section of our HTML code. Sometimes people create a generic title while working on 
+			their website s template, their website s name, for example : and then re-use the same title across the 
+			whole website. This is wrong because it robs each page of a couple of key benefits.</p>
+
+			<p>The first benefit is that a <b>good title communicates to your visitors a lot of information</b> about what the 
+			page is about. People can quickly figure out if they are in the right place or not. Remember that this 
+			title does not just show at the top of the browser window; it is also shown on the <b>search engine results 
+			pages.</b> When people see a list of results on a search engine like Google, they read the page title to 
+			figure out what each page is about. This alone is a good enough reason to spend a little time optimizing 
+			your page titles.</p>
+		</div>
+		<div>
+			<h2>Switching to External CSS from Internal and Inline CSS</h2>
+			<p><b>External CSS</b><br>
+				An external style sheet is ideal when the style is applied to many pages. With an external 
+				style sheet, you can change the look of an entire Web site by changing one file. Each page 
+				must link to the style sheet using the <b>link</b> tag. The <b>link</b> tag goes inside the 
+				head section:</p>
+				<img src="csslink.jpg" alt="External Css Link">
+				<p>An external style sheet can be written in any text editor. The file should not contain 
+					any html tags. Your style sheet should be saved with a .css extension. An example of a 
+					style sheet file is shown below:</p>
+					<img src="csscode.jpg" alt="External Css Code">
+				<p><b>Advantages : </b><br>
+					There are many advantages for using external CSS and some of are:
+					<ul>
+						<li>
+							<p>
+								<b>Full Control of page structure:</b>
+								CSS allows you to display your web page according to W3C HTML standards without making any compromise 
+								with the actual look of the page.
+							</p>
+						</li>
+						<li>
+							<p><b>Reduced file-size: </b>By including the styling of the text in a separate file, you can 
+							dramatically decrease the file-size of your pages.
+							</p>
+						</li>
+						<li>
+								<p><b>Less load time: </b>Today, when Google has included the Loading time in his algorithm,
+								its become more important to look into the page loading time and another benefit of having 
+								low file-size pages translates into reduced bandwidth costs. CSS can help you save some money 
+								by offering you.
+								</p>
+							</li>
+					</ul>
+				</p>
+					
+			</div>
+
+		<div>
+			<h2>A Short report on requiremets of hosting the portfolio</h2>
+			<table align="center" cellpadding="5px" border="2" class="comptable">
+				<thead>
+					<tr>
+						<th>Parameters</th>
+						<th colspan="3">Comparison</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Names</td>
+						<td>Hostgator</td>
+						<td>Inmotion</td>
+						<td>Bluehost</td>
+					</tr>
+					<tr>
+						<td>Cost</td>
+						<td>$2.75 (shared) to $149 (dedicated)</td>
+						<td>$3.99 (shared) to $519.49 (dedicated)</td>
+						<td>$2.75 (standard) to	$199.99 (dedicated)</td>
+					</tr>
+					<tr>
+						<td>Software Offered</td>
+						<td>Some of the softwares offered by Hostgator : <br>
+							<ul>
+								<li>PhpMyAdmin</li>
+								<li>Ruby On Rails</li>
+								<li>MySql Database</li>
+								<li>Python</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>ImageMagick</li>
+								<li>Ruby On Rails</li>
+								<li>MongoDB</li>
+								<li>Java/JRE</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Apache</li>
+								<li>PHP</li>
+								<li>MySQL</li>
+								<li>Linux Operating System</li>
+							</ul>
+						</td>
+					</tr>
+					<tr>
+						<td>Storage Space</td>
+						<td>Unlimited</td>
+						<td>Unlimited</td>
+						<td>Unlimited</td>
+					</tr>
+					<tr>
+						<td>Reliability</td>
+						<td>With a <b>99.9% uptime</b> guarantee, HostGator performs admirably when it comes to reliability</td>
+						<td>InMotion<code>'</code>s uptime clocked in at <b>99.947%</b> (0.007% better than the industry average of 99.94%)</td>
+						<td>Bluehost is clearly at the top with their <b>uptime (99.99%)</b> and fast load time of 0.41ms.</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div>
+			<h2>Summary and Recomendation</h2>
+			Based on the above research data, <b>HostGator</b> is the number one recommended web hosting provider! It offers a great blend of features, reliability and pricing plans.
+			The beauty of this provider is that even this basic plan is unrestricted in many respects. There are no limits on bandwidth or disk space, subdomains, MySQL databases, FTP and email accounts.
+			You also get cPanel-based management of your website, and a 99.9% uptime guarantee. Other laudable benefits include 24/7 customer support, and $200 worth of Google and Bing Ads credits.
+		</div>
+
+<hr>
+<p align="center">&copy;Copyright Electronic Web Portfolio 2018-2019</p>
+</body>
+
+</html>
+
+
+

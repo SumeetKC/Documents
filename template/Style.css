@@ -5,8 +5,8 @@ body {
 	margin-right: 70px;
 	background: lightgrey no-repeat top left;
 	
-	font-family: "Segoe UI";
-	font-size: 15px;
+	font-family: Arial;
+	font-size: 17px;
 }
 
 h1 {
@@ -40,3 +40,8 @@ h1 {
 	margin-bottom: 20px
 	
 }
+
+code{
+	color: chocolate
+}
+
