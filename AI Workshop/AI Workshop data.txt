@@ -1,0 +1,33 @@
+****************** AI Workshop Takeouts ***************
+Presentation - 
+	Research - ChatGpt
+	Outline - https://gamma.app/
+
+12ft IO - Tool to remove the Paywall on blogs or news sites
+		https://12ft.io/
+
+sci-hub.wf - Tool to download research paper for free
+		https://www.sci-hub.wf/
+		
+Merlin - Its a chrome extension that helps to summarize videos, text
+		https://chromewebstore.google.com/detail/merlin-1-click-access-to/camppjleccjaphfdbohjdohecfnoikec
+
+Any summary App - To Summarize any book, pdf,excel, ppt etc
+		https://www.anysummary.app/
+
+Canva - Tool to generate art work, images using AI
+		https://www.canva.com/ai-image-generator/
+
+Yoodli - Tool to practice for job interview, presentation. Basicall it acts as a speech coach
+		https://app.yoodli.ai/
+		
+Gemini - Tool to generate code in any language
+
+Codedamn - Tool to debug a code
+		https://codedamn.com/ai
+		
+Data Squirrel - For Data analystics including clean raw data, excel data, analysis and make dashboards
+		https://datasquirrel.ai/
+
+Character AI - A play tool to generate content in celeberties voices
+		https://character.ai/
